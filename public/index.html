@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omegle for Friends</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Omegle Lite</h1>
+
+  <input type="text" id="roomInput" placeholder="Enter room name" />
+  <button id="joinBtn">Join Room</button>
+  <button id="startCallBtn">Start Call</button>
+  <button id="endCallBtn">End Call</button>
+
+
+  <div class="video-container">
+    <video id="localVideo" autoplay playsinline muted></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
